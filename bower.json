@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "description": "My First Repository",
+  "main": "index.js",
+  "authors": [
+    "Naveen <naveen@dailyobjects.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/NaveenMangalam/Portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
