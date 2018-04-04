@@ -1,15 +1,30 @@
-<div class="home">Hi This is Home templates</div>
-<div>
-	<ul>
-		<li><a href="home">Home</a></li>
-		<li><a href="about">About</a></li>
-		<li><a href="contact">Contact</a></li>
-	</ul>
-</div>
-<div>{{msg}}</div>
-<div ng-repeat="service in servicess">
-	<ul>
-		<li>{{service.name}}</li>
-	</ul>
+<div class="home-container">
+   <div class="background">
+      <div class="left-container">
 
-</div>
+      </div>
+      <div class="right-container">
+	
+      </div>
+    </div>
+   <header>
+		<div class="navbar">
+			<!-- <ul>
+				<li ng-repeat="nav in services"><a href="{{url}}">{{items.nav}}</a></li>
+				
+			</ul> -->
+			<ul class="navbar-item">
+				<li ng-repeat="navs in services.items.nav"><a href="{{navs.url}}">{{navs.name}}</a></li>
+				
+			</ul>
+			<ul  class="navbar-item social-icon">
+			
+				<li class=" social-iconUrl" ng-repeat="icon in services.items.navSocial"><a class="icon-link" href="{{icon.url}}"><img class="header-social__icon" src="{{icon.img}}"></a></li>
+				
+			</ul>
+		</div>
+	</header>
+			<div>{{msg}}</div>
+			
+
+			</div>

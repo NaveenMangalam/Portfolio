@@ -1,17 +1,73 @@
-[
- {
- "id":"1",
- "name":"home home home",
- "description":"this is ab template"
- },
- {
- "id":"2",
- "name":"home about about",
- "description":"this is abc template"
- },
- {
- "id":"3",
- "name":"contact contact contact",
- "description":"this is abcd template"
- }
-]
+{
+	"items":{
+		"nav":[
+			 {
+			 "id":"1",
+			 "url":"/home",
+			 "name":"home",
+			 "description":"this is ab template"
+			 },
+			 {
+			 "id":"2",
+			 "url":"/about",
+			 "name":"about",
+			 "description":"this is abc template"
+			 },
+			 {
+			 "id":"3",
+			 "url":"/contact",
+			 "name":"contact",
+			 "description":"this is abcd template"
+			 },
+			 {
+			 "id":"3",
+			 "url":"/portfolio",
+			 "name":"portfolio",
+			 "description":"this is abcd template"
+			 },
+			 {
+			 "id":"3",
+			 "url":"/blog",
+			 "name":"blog",
+			 "description":"this is abcd template"
+			 }
+		],
+		"navSocial":[
+			 {
+			 "id":"1",
+			 "url":"/home",
+			 "name":"home",
+			 "img":"image/facebook.svg",
+			 "description":"this is ab template"
+			 },
+			 {
+			 "id":"2",
+			 "url":"/about",
+			 "name":"about",
+			 "img":"image/twitter.svg",
+			 "description":"this is abc template"
+			 },
+			 {
+			 "id":"3",
+			 "url":"/contact",
+			 "name":"contact",
+			 "img":"image/instagram.svg",
+			 "description":"this is abcd template"
+			 },
+			 {
+			 "id":"3",
+			 "url":"/portfolio",
+			 "name":"portfolio",
+			 "img":"image/youtube.svg",
+			 "description":"this is abcd template"
+			 },
+			 {
+			 "id":"3",
+			 "url":"/blog",
+			 "name":"blog",
+			 "img":"image/pinterest.svg",
+			 "description":"this is abcd template"
+			 }
+		]
+    }
+}

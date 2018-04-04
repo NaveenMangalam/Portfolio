@@ -52,24 +52,30 @@ module.exports = function(grunt) {
             options: {
               livereload: true,
               dateFormat: function(time) {
-                grunt.log.writeln('The watch finished in ' + time + 'ms at' + (new Date()).toString());
+                 grunt.log.writeln('The watch finished in ' + time + 'ms at' + (new Date()).toString());
                 grunt.log.writeln('Waiting for more changes...');
               }
               },
               scripts: {
                 files: 'app/js/*.js',
                 tasks: ['concat'],
+                options:{
+                  livereload: true
+                 }
                 },
               css: {
                 files: ['assets/css/*.css','assets/css/**/*.css'],
-                tasks: ['cssmin','concat']
+                tasks: ['cssmin','concat'],
+                options:{
+                  livereload: true
+                 }
                 }
               }
 
 
   }); //initConfig
 
-grunt.loadNpmTasks('grunt-contrib-concat');
+ grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-sass');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-connect');

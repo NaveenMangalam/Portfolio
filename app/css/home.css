@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	line-height: 26px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #797979;
+    height: 100%;
+    width: 100%;
+}
+.home-container{
+
+}
+.background{
+	position: absolute;;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.left-container{
+	width: calc(50% - 235px);
+    float: left;
+    background: #018bcb;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+.left-container::before{
+      background-image: url(http://demos.pixelatethemes.com/ramarino/image/texture.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      float: left;
+	}
+.right-container{
+	//position: relative;
+	background-image: url(http://demos.pixelatethemes.com/ramarino/image/right.jpg);
+	width: calc(50% + 235px);
+    float: right;
+    //background: url(../image/right.jpg) no-repeat scroll center 0/cover;
+    height: 100%;
+    overflow: hidden;
+}
+header{
+	position: fixed;
+    /* right: 10%; */
+    width: 100%;
+    /*text-align: center;*/
+    height: 70px;
+
+}
+.navbar{
+    width: 65%;
+    margin-left: 35%;
+}
+.navbar-item{
+    display: inline-block;
+}
+header li{
+	list-style: none;
+    display: inline-block;
+    //width: 10%;
+    margin-left: 15px;
+}
+header li a{
+	padding: 10px;
+    line-height: 4;
+    height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+header li a:hover{
+     color: #50c6f2;
+    
+
+	}
+    .navbar-item{
+        margin: 0;
+    }
+    .social-icon{
+       margin: 0;
+       border-left: 1px solid;
+    }
+    .social-iconUrl{
+       display: inline-block;
+    margin-left: 10px;
+        vertical-align: sub;
+    }
+    .social-iconUrl a{
+        padding: 0;
+        line-height: 18px;
+    }
+    .icon-link{
+        display: inline-block;
+    -webkit-transition: 0.1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 0.1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
+    }
+
+    .header-social__icon{
+        width: 22px;
+        height: 22px;
+    }
+    .header-social__icon:hover{
+      display: inline-block;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #e2e2e2;
+    padding: 2px;
+    transition: .2s
+    }
+	
